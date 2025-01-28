@@ -46,6 +46,41 @@ nav ul li a{
     height: 20px;
     cursor: pointer;
 }
+/*Foto*/
+.hero {
+    position: relative;
+    text-align: center;
+    color: #000;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero-text {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #000;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+
+.hero-text h2 {
+    font-size: 16px;
+    margin-bottom: 30px;
+    font-weight: 400;
+    color: #555;
+}
+
 /*Catalogo */
 a {
     text-decoration: none;
@@ -103,22 +138,17 @@ a {
   .banner p {
     font-size: 18px;
   }
-  
-  /* Catálogo */
-  .catalog {
+    .catalog {
     padding: 40px 20px;
   }
-  
   .catalog h2 {
     margin-bottom: 20px;
   }
-  
   .product-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
   }
-  
   .product-card {
     background-color: white;
     border-radius: 10px;
@@ -126,7 +156,6 @@ a {
     padding: 20px;
     text-align: center;
   }
-  
   .product-card img {
     max-width: 100%;
     border-radius: 10px;
