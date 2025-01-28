@@ -46,55 +46,134 @@ nav ul li a{
     height: 20px;
     cursor: pointer;
 }
-/*Registro */
-.form-registro{
-    width:  400px;
-    background-color: #24303c;
-    padding: 30px;
-    margin: auto;
-    margin-top: 100px;
-    border-radius: 4px;
-    color: white;
-}
-.form-registro h4{
-    font-size: 22px;
-    margin-bottom: 20px;
-}
-.controls {
-    width: 100%;
-    background: #24303c;
-    padding: 10px;
-    border-radius: 4px;
-    margin-bottom: 16px;
-    border: 1px solid #1f53c5;
-    font-family: 'calibri';
-    font-size: 18px;
-    color: white;
-  }
-  
-  .form-register p {
-    height: 40px;
-    text-align: center;
-    font-size: 18px;
-    line-height: 40px;
-  }
-  
-  .form-register a {
-    color: white;
+/*Catalogo */
+a {
     text-decoration: none;
+    color: white;
   }
   
-  .form-register a:hover {
+  h1, h2 {
+    text-align: center;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222;
     color: white;
-    text-decoration: underline;
+    padding: 10px 20px;
+  }
+  .navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
   }
   
-  .form-register .botons {
-    width: 100%;
-    background: #1f53c5;
-    border: none;
-    padding: 12px;
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar ul li {
+    display: inline;
+  }
+  
+  .navbar ul li a {
     color: white;
-    margin: 16px 0;
+    padding: 8px 12px;
+  }
+  
+  .navbar ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+  }
+  
+  /* Banner */
+  .banner {
+    background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+  }
+  
+  .banner h1 {
+    font-size: 50px;
+  }
+  
+  .banner p {
+    font-size: 18px;
+  }
+  
+  /* Catálogo */
+  .catalog {
+    padding: 40px 20px;
+  }
+  
+  .catalog h2 {
+    margin-bottom: 20px;
+  }
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .product-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .product-card img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  
+  .product-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .product-card p {
     font-size: 16px;
+    color: #555;
+  }
+  
+  .product-card .btn {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .product-card .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Pie de página */
+  .footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+  }
+  
+  .footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+  }
+  
+  .footer ul li img {
+    width: 30px;
+    height: 30px;
   }
