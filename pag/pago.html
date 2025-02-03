@@ -26,6 +26,43 @@
             <img src="/proyectoLM/img/shopping-bag--v1.png" alt="">
         </div>
     </header>
+    <div class="container">
+        <h1>Página de Pago</h1>
+
+        <!-- Opciones de pago -->
+        <div class="payment-methods">
+            <h2>Métodos de Pago</h2>
+            <label>
+                <input type="radio" name="payment-method" value="visa"> Visa
+            </label>
+            <label>
+                <input type="radio" name="payment-method" value="mastercard"> MasterCard
+            </label>
+            <label>
+                <input type="radio" name="payment-method" value="amex"> American Express
+            </label>
+            <label>
+                <input type="radio" name="payment-method" value="paypal"> PayPal
+            </label>
+        </div>
+
+        <!-- Formulario de pago -->
+        <div class="payment-form">
+            <h2>Datos de la Tarjeta</h2>
+            <form>
+                <label for="card-number">Número de Tarjeta:</label>
+                <input type="text" id="card-number" name="card-number" required>
+
+                <label for="expiry-date">Fecha de Vencimiento:</label>
+                <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY" required>
+
+                <label for="security-code">Código de Seguridad:</label>
+                <input type="text" id="security-code" name="security-code" required>
+
+                <button type="submit">Finalizar Pago</button>
+            </form>
+        </div>
+    </div>
       <footer class="footer">
         <p>Copyright © 2025. Todos los derechos reservados.</p>
         <ul class="social-media">

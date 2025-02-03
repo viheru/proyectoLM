@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ProyectoLM</title>
     <link rel="stylesheet" href="/proyectoLM/css/style.css">
 </head>
-<body>        
+
+<body>
     </style>
     <!-- Encabezado -->
     <header>
@@ -28,33 +30,58 @@
             <img src="/proyectoLM/img/shopping-bag--v1.png" alt="">
         </div>
     </header>
-    <div class="product-container">
-        <div class="product-title">Nike Windrunner</div>
-        <div class="product-description">Chaqueta de running Repel - Hombre</div>
-        <div class="price">76,99 € <span class="discount">109,99 € 30 % de descuento</span></div>
-        <div class="size-selector">
-            <button>S</button>
-            <button>M</button>
-            <button>L</button>
-            <button>XL</button>
-            <button>3XL</button>
+    <div class="container">
+        <div class="product-column">
+            <!-- Columna izquierda: Nombre del producto e imagen -->
+            <div class="left-column">
+                <h1>Nombre del Producto</h1>
+                <img src="../img/camiseta.webp" alt="Imagen del Producto" class="product-image">
+            </div>
+
+            <!-- Columna derecha: Descripción, precio y tallas -->
+            <div class="right-column">
+                <h2>Descripción del Producto</h2>
+                <p>
+                    Diseñada para ofrecer comodidad y versatilidad, esta camiseta es perfecta para cualquier ocasión, ya
+                    sea un día casual, una salida con amigos o incluso un look relajado para el trabajo.
+                </p>
+                <p class="precio">99.99€</p>
+
+                <!-- Selector de tallas -->
+                <div class="size-selector">
+                    <h3>Selecciona tu talla:</h3>
+                    <div class="sizes">
+                        <label>
+                            <input type="radio" name="size" value="S"> S
+                        </label>
+                        <label>
+                            <input type="radio" name="size" value="M"> M
+                        </label>
+                        <label>
+                            <input type="radio" name="size" value="L"> L
+                        </label>
+                        <label>
+                            <input type="radio" name="size" value="XL"> XL
+                        </label>
+                    </div>
+                </div>
+
+                <button class="buy-button">Comprar Ahora</button>
+            </div>
         </div>
-        <div class="actions">
-            <button>Comprar <a href="/proyectoLM/pag/pago.html"></a></button>
-            <button>Favorito</button>
-        </div>
-        <div class="store-pickup">Recogida gratuita - Buscar una tienda</div>
     </div>
     <!-- Pie de página -->
-   <footer class="footer">
-    
-    <p>Copyright © 2025. Todos los derechos reservados.</p>
-    <ul class="social-media">
-      <li><a href="https://www.facebook.com/?locale=es_ES"><img src="/proyectoLM/img/facebook.png" alt=""></a></li>
-      <li><a href="https://x.com/?lang=es&mx=2"><img src="/proyectoLM/img/twitter.png" alt=""></a></li>
-      <li><a href="https://www.instagram.com/?hl=es"><img src="/proyectoLM/img/instagram.webp" alt=""></a></li>
-    </ul>
-    <a href="#home">Volver al inicio</a>
-  </footer>
+    <footer class="footer">
+
+        <p>Copyright © 2025. Todos los derechos reservados.</p>
+        <ul class="social-media">
+            <li><a href="https://www.facebook.com/?locale=es_ES"><img src="/proyectoLM/img/facebook.png" alt=""></a>
+            </li>
+            <li><a href="https://x.com/?lang=es&mx=2"><img src="/proyectoLM/img/twitter.png" alt=""></a></li>
+            <li><a href="https://www.instagram.com/?hl=es"><img src="/proyectoLM/img/instagram.webp" alt=""></a></li>
+        </ul>
+        <a href="#home">Volver al inicio</a>
+    </footer>
 </body>
+
 </html>
