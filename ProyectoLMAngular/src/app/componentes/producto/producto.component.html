@@ -1,1 +1,40 @@
-<p>producto works!</p>
+<div class="container">
+    <div class="columna-producto">
+        <!-- Columna izquierda: Nombre del producto e imagen -->
+        <div class="left-column">
+            <h1>Nombre del Producto</h1>
+            <img src="../img/camiseta.webp" alt="Imagen del Producto" class="product-image">
+        </div>
+
+        <!-- Columna derecha: Descripción, precio y tallas -->
+        <div class="right-column">
+            <h2>Descripción del Producto</h2>
+            <p>
+                Diseñada para ofrecer comodidad y versatilidad, esta camiseta es perfecta para cualquier ocasión, ya
+                sea un día casual, una salida con amigos o incluso un look relajado para el trabajo.
+            </p>
+            <p class="precio">99.99€</p>
+
+            <!-- Selector de tallas -->
+            <div class="size-selector">
+                <h3>Selecciona tu talla:</h3>
+                <div class="sizes">
+                    <label>
+                        <input type="radio" name="size" value="S"> S
+                    </label>
+                    <label>
+                        <input type="radio" name="size" value="M"> M
+                    </label>
+                    <label>
+                        <input type="radio" name="size" value="L"> L
+                    </label>
+                    <label>
+                        <input type="radio" name="size" value="XL"> XL
+                    </label>
+                </div>
+            </div>
+
+            <button class="buy-button">Comprar Ahora</button>
+        </div>
+    </div>
+</div>
