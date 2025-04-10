@@ -1,0 +1,9 @@
+.foto {
+    width: 100px;
+    height: auto;
+    position: relative;
+    text-align: center;
+}
+.banner img{
+    margin: 50px;
+}
