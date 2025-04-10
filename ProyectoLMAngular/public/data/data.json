@@ -1,0 +1,16 @@
+[
+    {
+      "id": 1,
+      "nombre": "Camiseta Básica",
+      "descripcion": "Camiseta de algodón 100% con diseño clásico.",
+      "precio": 14.99,
+      "imagen": "https://example.com/images/camiseta.jpg"
+    },
+    {
+      "id": 2,
+      "nombre": "Pantalón Vaquero",
+      "descripcion": "Jeans de corte recto color azul.",
+      "precio": 39.99,
+      "imagen": "https://example.com/images/pantalon.jpg"
+    }
+  ]
