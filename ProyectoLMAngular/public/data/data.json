@@ -1,16 +1,34 @@
-[
+{
+  "nombreTienda": "Streetwear",
+  "productos": [
     {
       "id": 1,
       "nombre": "Camiseta Básica",
       "descripcion": "Camiseta de algodón 100% con diseño clásico.",
-      "precio": 14.99,
-      "imagen": "https://example.com/images/camiseta.jpg"
+      "precio": 20.00,
+      "imagen": "img/camiseta.webp"
     },
     {
       "id": 2,
-      "nombre": "Pantalón Vaquero",
-      "descripcion": "Jeans de corte recto color azul.",
-      "precio": 39.99,
-      "imagen": "https://example.com/images/pantalon.jpg"
+      "nombre": "Pantalón Chandal PSG",
+      "descripcion": "Confeccionado en materiales cómodos y de alta calidad",
+      "precio": 35.00,
+      "imagen": "img/panatalon.jpg"
+    },
+    {
+      "id": 3,
+      "nombre": "Sudadera Nike Sportswear Club Crew",
+      "descripcion": "Su diseño clásico y suave tejido fleece la hacen perfecta para el uso diario.",
+      "precio": 50.00,
+      "imagen": "img/chaqueta.jpg"
+    },
+    {
+      "id": 4,
+      "nombre": "Sudadera Oversized",
+      "descripcion": "Comodidad sin esfuerzo con un toque urbano.",
+      "precio": 25.00,
+      "imagen": "img/sudadera.jpg"
     }
   ]
+}
+ 

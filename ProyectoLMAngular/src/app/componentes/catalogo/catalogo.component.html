@@ -1,42 +1,18 @@
- <!-- Banner -->
- <h2>Presentamos la colección de ropa</h2>
- <h1>COMODIDAD<br>PARA TODO EL DÍA</h1>
- <div class="buttons">
-   <a href="#">Comprar</a>
-   <a href="#">Más información</a>
- </div>
+ <div class="container d-flex flex-column justify-content-between">
+    <h1 class="dispaly-2">{{tienda.NombreTienda}}</h1>
 
-<!-- Catálogo de productos -->
-<section id="catalog" class="catalog">
-<h2>Catálogo de Productos</h2>
-<div class="product-grid">
-  <!-- Producto 1 -->
-  <div class="product-card">
-    <img src="/img/camiseta.webp" alt="">
-    <h3>Camiseta Básica</h3>
-    <p>Precio: 20.00€</p>
-    <a href="/pag/producto.html" class="btn">Ver Detalles</a>
-  </div>
-  <!-- Producto 2 -->
-  <div class="product-card">
-    <img src="/img/pantalon.jpg" alt="">
-    <h3>Pantalon Chandal PSG</h3>
-    <p>Precio: 35.00€</p>
-    <a href="/pag/producto.html" class="btn">Ver Detalles</a>
-  </div>
-  <!-- Producto 3 -->
-  <div class="product-card">
-    <img src="/img/sudadera.jpg" alt="">
-    <h3>Sudadera Nike Sportswear Club Crew</h3>
-    <p>Precio: 50.00€</p>
-    <a href="/pag/producto.html" class="btn">Ver Detalles</a>
-  </div>
-  <!-- Producto 4 -->
-  <div class="product-card">
-    <img src="/img/chaqueta.jpg" alt="">
-    <h3>Sudadera Oversized</h3>
-    <p>Precio: $25.00</p>
-    <a href="/pag/producto.html" class="btn">Ver Detalles</a>
+    <div class="container d-flex flex-row justify-content-between">
+    @for (tienda of tienda.productos; track $index) {
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">{{tienda.id}}</h5>
+          <h6 class="card-subtitle mb-2 text-body-secondary">{{tienda.nombre}}</h6>
+          <p class="card-text">{{tienda.descripcion}}</p>
+          <p class="card-text">{{tienda.precio}}</p>
+          <p class="card-text">{{tienda.imagen}}</p>
+
+        </div>
+      </div>
+    }
   </div>
 </div>
-</section>
