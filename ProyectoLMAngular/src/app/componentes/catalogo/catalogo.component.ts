@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Catalogo } from '../../common/catalogo';
+import { Component, OnInit } from '@angular/core';
+import { DataService } from '../../servicios/data.service';
 
 @Component({
   selector: 'app-catalogo',
@@ -6,39 +8,28 @@ import { Component } from '@angular/core';
   templateUrl: './catalogo.component.html',
   styleUrl: './catalogo.component.css'
 })
-export class CatalogoComponent {
+export class CatalogoComponent implements OnInit{
+    catalogo! : Catalogo;
+    constructor(private dataservice: DataService){}
     
-  tienda = {
-    NombreTienda: 'StreetWear',
-    productos: [
-      {
-        id: 1,
-        nombre: 'Camiseta Básica',
-        descripcion: 'Camiseta de algodón 100% con diseño clásico.',
-        precio: '20.00€',
-        imagen: 'img/camiseta.webp'
-      },
-      {
-        id: 2,
-        nombre: 'Pantalón Chandal PSG',
-        descripcion: 'Confeccionado en materiales cómodos y de alta calidad',
-        precio: '35.00€',
-        imagen: 'img/panatalon.jpg'
-      },
-      {
-        id: 3,
-        nombre: 'Sudadera Nike Sportswear Club Crew',
-        descripcion: 'Su diseño clásico y suave tejido fleece la hacen perfecta para el uso diario.',
-        precio: '20.00€',
-        imagen: 'img/chaqueta.jpg'
-      },
-      {
-        id: 4,
-        nombre: 'Sudadera Oversized',
-        descripcion: 'Comodidad sin esfuerzo con un toque urbano.',
-        precio: '20.00€',
-        imagen: 'img/sudadera.jpg'
-      }
-    ]
+    ngOnInit(): void {
+      this.loadCatalogo();  
+    }
+
+    loadCatalogo(){
+      this.dataservice.getCatalogo().subscribe(
+        {
+          next: (data)=>{
+            console.log(data);
+            this.catalogo = data;
+          },
+          error: (err)=>{
+            console.error(err);
+          },
+          complete: ()=>{
+            console.log("Carga del catalogo comoletada");
+          }
+        }
+      )
+    }
   }
-}

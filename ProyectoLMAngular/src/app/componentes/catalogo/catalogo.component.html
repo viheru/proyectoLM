@@ -1,18 +1,18 @@
- <div class="container d-flex flex-column justify-content-between">
-    <h1 class="dispaly-2">{{tienda.NombreTienda}}</h1>
+<div class="container d-flex flex-column justify-content-between align-itens-center">
+  <h1 class="dispaly-2 text-center">Nombre:{{catalogo.nombreTienda}}</h1>
 
-    <div class="container d-flex flex-row justify-content-between">
-    @for (tienda of tienda.productos; track $index) {
-      <div class="card" style="width: 18rem;">
-        <div class="card-body">
-          <h5 class="card-title">{{tienda.id}}</h5>
-          <h6 class="card-subtitle mb-2 text-body-secondary">{{tienda.nombre}}</h6>
-          <p class="card-text">{{tienda.descripcion}}</p>
-          <p class="card-text">{{tienda.precio}}</p>
-          <p class="card-text">{{tienda.imagen}}</p>
 
-        </div>
+  <div class="container d-flex flex-row justify-content-between flex-row flew-wrap">
+  @for (catalogo of catalogo.productos; track $index) {
+    <div class="card m-2 d-flex justify-content-center" style="width: 15rem;">
+      <img src="{{catalogo.imagen}}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title"> {{catalogo.nombre}}</h5>
+        <p class="card-text">{{catalogo.descripcion}}</p>
+        <h5 class="card-title"> {{catalogo.precio}}</h5>
+        <a href="#" class="btn btn-primary">Ver producto</a>
       </div>
-    }
-  </div>
+    </div>
+  }
+</div>
 </div>
