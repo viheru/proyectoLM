@@ -16,6 +16,7 @@ export const routes: Routes = [
     {path: 'footer', component: FooterComponent},
     {path: 'catalogo', component: CatalogoComponent},
     {path: 'producto', component: ProductoComponent},
+    {path: 'producto/:nombre', component: ProductoComponent},
     {path: 'pago', component: PagoComponent},
     {path: 'contacto', component: ContactoComponent},
     {path: 'iniciosesion', component: IniciosesionComponent},

@@ -9,5 +9,6 @@ export interface Catalogo {
     descripcion: string
     precio: number
     imagen: string
+    stock: number
   }
 

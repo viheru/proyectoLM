@@ -1,5 +1,5 @@
 <div class="container d-flex flex-column justify-content-between align-itens-center">
-  <h1 class="dispaly-2 text-center">Nombre:{{catalogo.nombreTienda}}</h1>
+  <h1 class="dispaly-2 text-center">{{catalogo.nombreTienda}}</h1>
 
 
   <div class="container d-flex flex-row justify-content-between flex-row flew-wrap">
@@ -10,7 +10,7 @@
         <h5 class="card-title"> {{catalogo.nombre}}</h5>
         <p class="card-text">{{catalogo.descripcion}}</p>
         <h5 class="card-title"> {{catalogo.precio}}</h5>
-        <a href="#" class="btn btn-primary">Ver producto</a>
+        <a [routerLink]="['/producto', catalogo.nombre]" class="btn btn-primary">Ver producto</a>
       </div>
     </div>
   }

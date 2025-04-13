@@ -1,40 +1,47 @@
-<div class="container">
-    <div class="columna-producto">
-        <!-- Columna izquierda: Nombre del producto e imagen -->
-        <div class="left-column">
-            <h1>Nombre del Producto</h1>
-            <img src="../img/camiseta.webp" alt="Imagen del Producto" class="product-image">
-        </div>
+<!--<div class="container d-flex justify-content-between">
 
-        <!-- Columna derecha: Descripción, precio y tallas -->
-        <div class="right-column">
-            <h2>Descripción del Producto</h2>
-            <p>
-                Diseñada para ofrecer comodidad y versatilidad, esta camiseta es perfecta para cualquier ocasión, ya
-                sea un día casual, una salida con amigos o incluso un look relajado para el trabajo.
-            </p>
-            <p class="precio">99.99€</p>
-
-            <!-- Selector de tallas -->
-            <div class="size-selector">
-                <h3>Selecciona tu talla:</h3>
-                <div class="sizes">
-                    <label>
-                        <input type="radio" name="size" value="S"> S
-                    </label>
-                    <label>
-                        <input type="radio" name="size" value="M"> M
-                    </label>
-                    <label>
-                        <input type="radio" name="size" value="L"> L
-                    </label>
-                    <label>
-                        <input type="radio" name="size" value="XL"> XL
-                    </label>
-                </div>
-            </div>
-
-            <button class="buy-button">Comprar Ahora</button>
+    <div class="card m-3" style="width: 25rem;">
+      <div class="card-body">
+        <h5 class="card-title display-3">{{producto.nombre}}</h5>
+        <ul>
+          <li>Descripcion: {{producto.descripcion}}</li>
+          <li>Precio: {{producto.precio}} KG</li>
+          <li>Stock disponible: {{producto.stock}}</li>
+        </ul>
+      </div>
+    </div>
+  
+    <div class="card m-3" style="width: 25rem;">
+        <div class="card-body">
+          <h5 class="card-title display-3">{{producto.nombre}}</h5>
+          <ul>
+            <li>Descripcion: {{producto.descripcion}}</li>
+            <li>Precio: {{producto.precio}} KG</li>
+            <li>Stock disponible: {{producto.stock}}</li>
+          </ul>
         </div>
     </div>
+</div> -->
+
+<div class="container d-flex justify-content-between flex-column">
+
+
+<div class="row align-items-md-stretch">
+    <div class="col-md-6">
+      <div class="h-100 p-5 text-bg-dark rounded-3">
+        <h1 class="display-3 ">{{productoONE?.nombre}}</h1>
+        <h1 class="display-6">{{productoONE?.descripcion}}</h1>
+        <h1 class="display-6">{{productoONE?.precio}}</h1>
+        <h1 class="display-6">{{productoONE?.stock}}</h1>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="h-100 bg-body-tertiary border rounded-3 d-flex justify-content-center align-items-center">
+        <img class="w-50" src="{{productoONE?.imagen}}" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="d-flex p-5 justify-content-center align-items-center">
+    <a class="btn bgButtonBlue w-30" routerLink="/catalogo">Volver a catalogo</a>
+  </div>
 </div>

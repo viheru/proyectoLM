@@ -1,10 +1,11 @@
 import { Catalogo } from '../../common/catalogo';
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../../servicios/data.service';
+import { RouterLink, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-catalogo',
-  imports: [],
+  imports: [RouterModule, RouterLink],
   templateUrl: './catalogo.component.html',
   styleUrl: './catalogo.component.css'
 })
