@@ -1,0 +1,19 @@
+.card {
+    border-radius: 10px;
+  }
+  
+  .btn-primary {
+    background-color: #0d6efd;
+    border: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0b5ed7;
+    transform: translateY(-2px);
+  }
+  
+  address p {
+    margin-bottom: 0.8rem;
+  }
