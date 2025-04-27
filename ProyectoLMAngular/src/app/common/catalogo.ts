@@ -1,14 +1,14 @@
 export interface Catalogo {
-    nombreTienda: string
-    productos: Producto[]
-  }
-  
-  export interface Producto {
-    id: number
-    nombre: string
-    descripcion: string
-    precio: number
-    imagen: string
-    stock: number
-  }
+  nombreTienda: string
+  productos: Producto[]
+}
+
+export interface Producto {
+  nombre: string
+  descripcion: string
+  precio: string
+  talla: string
+  stock: string
+  imagen: string
+}
 

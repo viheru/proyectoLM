@@ -2,31 +2,35 @@
   "nombreTienda": "Streetwear",
   "productos": [
     {
-      "id": 1,
       "nombre": "Camiseta Básica",
       "descripcion": "Camiseta de algodón 100% con diseño clásico.",
       "precio": "20.00€",
+      "talla": "X",
+      "stock": "Si",
       "imagen": "img/camiseta.webp"
     },
     {
-      "id": 2,
       "nombre": "Pantalón Chandal PSG",
       "descripcion": "Confeccionado en materiales cómodos y de alta calidad",
       "precio": "35.00€",
+      "talla": "XL",
+      "stock": "No",
       "imagen": "img/pantalon.jpg"
     },
     {
-      "id": 3,
       "nombre": "Sudadera Nike Sportswear Club Crew",
       "descripcion": "Su diseño clásico y suave tejido fleece la hacen perfecta para el uso diario.",
       "precio": "50.00€",
+      "talla": "M",
+      "stock": "Si",
       "imagen": "img/chaqueta.jpg"
     },
     {
-      "id": 4,
       "nombre": "Sudadera Oversized",
       "descripcion": "Comodidad sin esfuerzo con un toque urbano.",
       "precio": "25.00€",
+      "talla": "XXL",
+      "stock": "No",
       "imagen": "img/sudadera.jpg"
     }
   ]

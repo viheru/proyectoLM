@@ -30,9 +30,12 @@
     <div class="col-md-6">
       <div class="h-100 p-5 text-bg-dark rounded-3">
         <h1 class="display-3 ">{{productoONE?.nombre}}</h1>
-        <h1 class="display-6">{{productoONE?.descripcion}}</h1>
-        <h1 class="display-6">{{productoONE?.precio}}</h1>
-        <h1 class="display-6">{{productoONE?.stock}}</h1>
+        <ul>
+        <li class="display-6">{{productoONE?.descripcion}}</li>
+        <li class="display-6">{{productoONE?.precio}}</li>
+        <li class="display-6">Talla:{{productoONE?.talla}}</li>
+        <li class="display-6">Stock disponible: {{productoONE?.stock}}</li>
+      </ul>
       </div>
     </div>
     <div class="col-md-6">

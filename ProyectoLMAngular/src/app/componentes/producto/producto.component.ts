@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Producto } from '../../common/catalogo';
 import { DataService } from '../../servicios/data.service';
 import { ActivatedRoute, RouterLink } from '@angular/router';
-import { error } from 'console';
+
 
 @Component({
   selector: 'app-producto',
@@ -41,13 +41,7 @@ export class ProductoComponent implements OnInit{
       }
     )  
   }
-  
-  //producto ={
-    //nombre: 'Camiseta Basica',
-    //descripcion: 'Camiseta de algodón 100% con diseño clásico.',
-    //precio: '20.00€',
-    //stock: '10'
-  //}
- 
 }
+
+
 
