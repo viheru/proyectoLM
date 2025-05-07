@@ -1,6 +1,6 @@
-.logo{
-    display: flex;
-    justify-content: flex-start;
+.logo img{
+   float: left;
+   margin-right: 100px;
 }
 .iconos img{
     margin: 10px;
